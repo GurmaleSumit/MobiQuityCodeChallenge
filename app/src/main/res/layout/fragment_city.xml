@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".CityFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="My City" />
+-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sunny_image"></ImageView>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="400dp"
+         android:layout_marginLeft="40dp"
+         android:layout_marginRight="40dp"
+         android:orientation="vertical"
+         android:gravity="center"
+         android:background="@drawable/trasparancy"
+         android:layout_gravity="center_vertical">
+
+         <TextView
+             android:id="@+id/tv_date_time"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/darkGray"
+             android:textSize="15sp"
+             android:text="" />
+
+         <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:id="@+id/tv_temperature"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="33"
+                 android:textColor="@color/darkGray"
+                 android:textSize="70sp" />
+
+             <TextView
+                 android:id="@+id/celcius"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/degree_celsius_symbol"
+                 android:textColor="@color/darkGray"
+                 android:textSize="35sp"
+                 android:layout_toRightOf="@id/tv_temperature"
+                 android:layout_gravity="top"/>
+
+             <ImageView
+                 android:id="@+id/iv_weather_condition"
+                 android:layout_toRightOf="@id/celcius"
+                 android:layout_width="60dp"
+                 android:layout_height="60dp"
+                 android:scaleType="centerCrop"/>
+
+
+         </RelativeLayout>
+
+
+         <TextView
+             android:id="@+id/tv_city_country"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/darkGray"
+             android:textSize="18sp"
+             android:text="Dhaka, BD" />
+
+     </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
